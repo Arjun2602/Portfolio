@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Arjun-Portfolio</title>
+  <link rel="shortcut icon" href="/Human.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script> -->
+  <script src="script.js" ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo">
+        <img src="Human.png" alt="human_img_logo">
+        <a href="#">Arjun</a>
+      </div>
+      <ul>
+        <li class="hideonMobile"><a href="#home">Home</a></li>
+        <li class="hideonMobile"><a href="#skill">Skill</a></li>
+        <li class="hideonMobile"><a href="#project">Project</a></li>
+        <li class="hideonMobile"><a href="#contact">Contact</a></li>
+        <li onclick= showSidebar()><img src="icons8-hamburger-50.png" alt="Hamburger-menu"></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="sidebar">
+    <li onclick= hideCloseBar()><img src="icons8-close-window-50.png" alt="close-icon"></li>
+    <li onclick= hideCloseBar()><a href="#home">Home</a></li>
+    <li onclick= hideCloseBar()><a href="#skill">Skill</a></li>
+    <li onclick= hideCloseBar()><a href="#project">Project</a></li>
+    <li onclick= hideCloseBar()><a href="#contact">Contact</a></li>
+  </div>
+  <div class="contents">
+
+    <div class="home" id="home">
+      <p class="hi">Hi<span>!</span></p>
+      <p class="iamarjun">I&#x27;am Arjun</p>
+      <h1 class="softwaredeveloper">Software Engineer</h1>
+      <p class="aboutme">Welcome to my portfolio website! I'm a passionate and aspiring software engineer with a strong desire to create innovative solutions and push the boundaries of technology.With a deep love for coding and problem-solving, I am constantly seeking opportunities to learn and grow in this ever-evolving field
+      </p>
+      <a href="#project">
+        <button class="seeWork">See my work</button>
+      </a>
+      <button class="downloadCV">Download CV<img src="downloads.png" alt="download-png"></button>
+    </div>
+    
+    <div class="skill" id="skill">
+      <h1 class="skillsheading">SKILLS</h1>
+      <table class="responsive-table">
+        <tr>
+          <th>LANGUAGES:</th>
+          <td>C++, HTML, CSS, Javascript</td>
+        </tr>
+        <tr>
+          <th>DATABASE <SPAn>MANAGEMENT</SPAn> :</th>
+          <td>MYSQL</td>
+        </tr>
+        <tr>
+          <th>CONCEPTS:</th>
+          <td>OOP, DSA</td>
+        </tr>
+        <tr>
+          <th>TOOLS :</th>
+          <td>GIT, VS Code, Code::Blocks</td>
+        </tr>
+        <tr>
+          <th>OPERATING <SPAn>SYSTEM</SPAn> :</th>
+          <td>WINDOWS</td>
+        </tr>
+      </table>
+
+      <div class="custom-table">
+        <div class="cusBox">
+          <h1 class="cusHeading">LANGUAGES</h1>
+          <p class="cusP">C++, Java, HTML, CSS, Javascript</p>
+        </div>
+        <div class="cusBox">
+          <h1 class="cusHeading">DATABASE <span>MANAGEMENT</span></h1>
+          <p class="cusP">MYSQL</p>
+        </div>
+        <div class="cusBox">
+          <h1 class="cusHeading">CONCEPTS</h1>
+          <p class="cusP">OOP, DSA</p>
+        </div>
+        <div class="cusBox">
+          <h1 class="cusHeading">TOOLS</h1>
+          <p class="cusP">GIT, VS Code, Code::Blocks</p>
+        </div>
+        <div class="cusBox">
+          <h1 class="cusHeading">OPERATING <span>SYSTEM</span></h1>
+          <p class="cusP">WINDOWS</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="project" id = "project">
+      <h1>PROJECTS</h1>
+    </div>
+    <div class="grid-container">
+
+      <div class="card">
+        <h1><span>AIRTRAFFIC</span> CONTROL SYSTEM</h1>
+        <div class="stack">
+          <p>C++</p>
+          <p>OOP</p>
+          <p>STL</p>
+          <p>Multithread</p>
+        </div>
+        <p>Developed a console-based air traffic control system using C++,
+          simulating runway allocation for takeoff and landing operations using
+          multithreading to manage runway availability in real-time.
+          Designed an object-oriented structure with classes for Flight, Runway,
+          Thread Manager, and a central system controller to handle logic.
+        </p>
+        <a href="https://github.com/Arjun2602/AirTrafficControlSystem" target="_blank">
+          <button class="githubcodeButton">
+            <img src="github-logo.png" alt="github-logo">View code on Github
+          </button>
+        </a>
+      </div>
+
+      <div class="card">
+        <h1><span>PORT</span>FOLIO</h1>
+        <div class="stack">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+        </div>
+        <p>Created a personal portfolio website using HTML, CSS, and JavaScript to introduce myself, share my projects.
+          The site features a responsive layout, clean UI, and organized sections
+        </p>
+        <a href="#">
+          <button class="githubcodeButton">
+          <img src="github-logo.png" alt="github-logo">View code on Github
+        </button>
+       </a> 
+      </div>
+
+      <div class="card">
+        <h1><span>BUS</span> APPLICATION</h1>
+        <div class="stack">
+          <p>C++</p>
+          <p>OOP</p>
+          <p>STL</p>
+          <p>File handling</p>
+        </div>
+        <p>Developed a console-based Bus Reservation System in C++ with functionalities including customer signup/login, ticket booking, cancellation, and real-time seat availability management. 
+          Implemented object-oriented principles across modules like Customer, Bus, Ticket, and Booking. The system enforces seat allocation rules, including gender-based restrictions, and 
+          maintains ticket history and booking summaries
+        </p>
+        <a href="https://github.com/Arjun2602/GreenBus" target="_blank">
+          <button class="githubcodeButton">
+            <img src="github-logo.png" alt="github-logo">View code on Github
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <a href="https://github.com/Arjun2602?tab=repositories" target="_blank">
+      <button class="view-github">
+      <img src="github-logo.png" alt="github-logo">
+      View Github
+    </button></a>
+    
+
+    <!-- /*<form class="form-container">
+      <div class="message">
+        <h1>Love to hear from you&#44;</h1>
+        <h1>Get in touch&#128522</h1>
+      </div>
+      
+      <div class="formBox">
+        <div class="input1"> 
+          <div>
+            <label for="name">Name</label>
+            <input type="fname" id="fname" name="fname" placeholder="Enter your name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div>
+            <label for="PhoneNo">Phone no</label>
+            <input type="text" id="PhoneNo" name="PhoneNo" placeholder="Phone no" required>
+          </div>
+        </div>
+
+        <div class="input2">
+          <label for="message">Message</label>
+          <textarea type="text" name="client-message" id="messag" placeholder="Enter your message here" required></textarea>
+        </div>
+        
+      </div>
+      <button type="submit" class="sendmessage" value="send" onclick="getInputValue()">SEND MESSAGE</button>
+    </form> -->
+    <div class="contact" id="contact">
+      <div class="contact1">
+        <h1>Do you have something to say&quest;</h1>
+        <a href="https://www.linkedin.com/in/arjun-krishnamoorthy-729782206/" target="_blank"><button><span>Let's connect!</span></button></a>
+        
+      </div>
+      <div class="contact2">
+
+        <div class="socialLinks">
+          <h1>Social Links</h1>
+          <div class="icons-div">
+            <a href="https://www.linkedin.com/in/arjun-krishnamoorthy-729782206/" target="_blank" class="smallbox">
+              <button><span><img src="icons8-linkedin-32.png" alt="LinkedInImage"></span></button>
+              <p>LinkedIn</p>
+            </a>
+            <a href="https://github.com/Arjun2602?tab=repositories" target="_blank" class="smallbox">
+              <button><span><img src="github-logo.png" alt="githubimage"></span></button>
+              <p>Github</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="importantLinks">
+          <h1>Important Links</h1>
+          <div class="icons-div">
+            <a href="" class="smallbox">
+              <button><span><img src="curriculum-vitae.png" alt="ResumeImage"></span></button>
+              <p>Resume</p>
+            </a>
+            <a href="" class="smallbox">
+              <button><span><img src="icons8-gmail-32.png" alt="emailimage"></span></button>
+              <p>Email</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2025 Arjun&#x2e; All rights reserved&#x2e;</p>
+    </div>
+  </div>
+</body>
+</html>
